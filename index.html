@@ -1,14 +1,152 @@
-<html>
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
-Chloe Stinetorf
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>chloe stinetorf</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript" src="//use.typekit.net/uiq6jzi.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
+
 <body>
-<h1>
-Chloe Stinetorf
-</h1>
-<p>
-This is my portfolio.
-</p>
+
+  <div class="fixed">
+    <nav class="top-bar">
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a class="nav_button" href="#work_tag">work</a></li>
+          <li><a class="nav_button" href="#contact_tag">contact</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns headlines">
+      <h1 id="main_header">chloe stinetorf</h1>
+      <h3 id="sub_header">web development + design</h3>
+      <%= render :partial => "about" %>
+    </div>
+  </div>
+
+  <div class="image_slider">
+    <div class="row">
+      <div class="large-12 columns">
+        <div id="slider" data-orbit data-options = "slide_number_class: slider_numbers; timer_speed:2500; bullets:false;">
+          <img src="assets/cookies10.png" />
+          <img src="assets/cookies15.png" />
+          <img src="assets/paintr8.png" />
+          <img src="assets/fitlings14.png" />
+          <img src="assets/flickr30.png" />
+          <img src="assets/hukkster.png" />
+          <img src="assets/hukkster1.png" />
+          <img src="assets/movielookup.png" />
+          <img src="assets/matisse12.png" />
+          <img src="assets/oceanic7.png" />
+          <img src="assets/eric.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a name="work_tag">
+  <div class="work">
+    <div class="row">
+      <div class="large-6 columns">
+        <a href="http://www.chloedoughy.com/" target="_blank"><img src="assets/cookies12.png"></a>
+      </div>
+      <div class="large-6 columns">
+        <a href="http://www.fitlin.gs/" target="_blank"><img src="assets/fitlings15.png"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+        <img src="assets/paintr8.png">
+      </div>
+      <div class="large-6 columns">
+        <img src="assets/flickr10.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+        <a href="http://www.christies.com/matisse/" target="_blank"><img src="assets/matisse23.png"></a>
+      </div>
+      <div class="large-6 columns">
+        <img src="assets/hukkster.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+        <img src="assets/movielookup.png">
+      </div>
+      <div class="large-6 columns">
+        <img src="assets/oceanic7.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+        <a href="http://www.ericcarterhair.com/" target="_blank"><img src="assets/eric10.png"></a>
+      </div>
+      <div class="large-6 columns">
+        <img src="assets/middle1.png">
+      </div>
+    </div>
+  </div>
+
+  <a name="contact_tag"></a>
+  <div class="row contact_div">
+    <div class="large-2 columns social">
+      <a href="https://twitter.com/ChloeStinetorf" target="_blank"><img class="social_icons" src="assets/twitter.png"><h6 class="social_header">TWITTER</h6></a>
+      <a href="http://instagram.com/stinetorf/" target="_blank"><img class="social_icons social2" src="assets/instagram.png"><h6 class="social_header">INSTAGRAM</h6></a>
+      <a href="https://github.com/ChloeStinetorf" target="_blank"><img class="social_icons social2" src="assets/github.png"><h6 class="social_header">GITHUB</h6></a>
+    </div>
+    <div class="large-5 columns contact">
+      <h6 class="contact_header">EMAIL</h6>
+      <h5>chloe [@] chloestinetorf.com</h5>
+      <br>
+      <h6 class="contact_header">TELEPHONE</h6>
+      <h5>+1 (510) 872-6390</h5>
+      <br>
+      <h6 class="contact_header">LOCATION</h6>
+      <h5>New York, NY</h5>
+    </div>
+    <div class="large-5 columns">
+      <img id="chloe" src="assets/chloe.png">
+    </div>
+  </div>
+
+  <div class="yellow_footer"></div>
+
+  <div class="footer">
+    <footer class="row">
+      <div class="large-12 columns">
+        <div class="row">
+          <div class="large-6 columns">
+            <p>&copy; 2013 Chloe Stinetorf</p>
+          </div>
+          <div class="large-6 columns">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '/assets/foundation/js/vendor/zepto' : '/assets/foundation/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+
+
+  <script>
+    $(document).foundation();
+  </script>
 
 </body>
 </html>
